@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import React, { useState } from 'react'
+import React from 'react'
 import {
     Box,
     Heading,
@@ -8,7 +8,6 @@ import {
     Stack,
     SimpleGrid
 } from '@chakra-ui/react';
-import axios from 'axios';
 import Nav from './navbar';
 import Weather from './weather';
 

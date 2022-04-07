@@ -4,6 +4,8 @@ import Search from "./search";
 import axios from "axios";
 import { Box, SimpleGrid, Container } from "@chakra-ui/react";
 
+const API_KEY = process.env.API_KEY
+
 const Weather = () => {
     const [data, setData] = useState(null);
     const [city, setCity] = useState();
@@ -21,7 +23,7 @@ const Weather = () => {
             setError(false);
             // setCity(city)
             // console.log(city, 'yyup')
-            const url = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=imperial&appid=5ef9734d08145dde0c0fe889ea01b21d`;
+            const url = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=imperial&appid=${API_KEY}`;
             console.log(url, 'url')
             const response = await axios.get(url);
             if (response.data !== 200) {
@@ -55,7 +57,6 @@ const Weather = () => {
                             .filter((_, i) => i % 8 == 0)
                             // .slice(0, 5)
                             .map((weather) => {
-                                // console.log(weather.weather[0].main, 'please work');
                                 return (
                                     <ProductSimple
                                         day={moment.unix(weather.dt).format("dddd")}

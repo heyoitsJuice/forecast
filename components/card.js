@@ -2,10 +2,8 @@ import {
     Box,
     Center,
     useColorModeValue,
-    Heading,
     Text,
     Stack,
-    Image,
 } from '@chakra-ui/react';
 import Day from '../components/CardProps/day'
 import Date from '../components/CardProps/date'

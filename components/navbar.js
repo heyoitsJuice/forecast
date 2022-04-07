@@ -1,21 +1,11 @@
-import { ReactNode } from 'react';
 import {
     Box,
     Flex,
-    Avatar,
     Link,
     Button,
-    Menu,
-    MenuButton,
-    MenuList,
-    MenuItem,
-    MenuDivider,
-    useDisclosure,
     useColorModeValue,
     Stack,
     useColorMode,
-    Center,
-    LinkItem,
     IconButton,
 
 } from '@chakra-ui/react';
@@ -30,7 +20,7 @@ export default function Nav() {
             <Box position="fixed" w="100%" bg={useColorModeValue('gray.100', 'gray.900')} px={4}>
                 <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
                     <Box>
-                        <Link href="/">
+                        <Link href="https://github.com/heyoitsJuice/forecast">
                             <IconButton fontSize='40px' icon={<IoLogoGithub />} />
                         </Link>
 

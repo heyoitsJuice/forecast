@@ -1,9 +1,9 @@
 import { Button, FormControl, Input, InputGroup, InputLeftElement, Stack } from "@chakra-ui/react"
 import { SearchIcon } from "@chakra-ui/icons"
-import React, { useState } from "react"
+import React from "react"
 
 const Search = ({ loadWeather }) => {
-    // const [value,setValue] = useState('')
+
     return (
         <form onSubmit={loadWeather}>
             <Stack direction={'row'}>

@@ -1,11 +1,5 @@
 import React from 'react'
-// import {Cloudy} from '../../public'
-// import {Rainy} from "./Images/Rainy.svg";
-// import {Sunny} from "./Images/Sunny.svg";
-// import {Snowing} from "./Images/Snowing.svg";
-// import {Thunder} from "./Images/Thunder.svg";
-// import {Universal} from "./Images/Universal.svg";
-import { Image, Icon } from '@chakra-ui/react';
+import { Image } from '@chakra-ui/react';
 
 
 export default function Icons(props) {
