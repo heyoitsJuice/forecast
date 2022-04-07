@@ -46,32 +46,34 @@ const Weather = () => {
     return (
         <div id="this">
             <Container maxW={'3xl'}>
-
                 <Search loadWeather={getWeather} />
             </Container>
-            <Box maxW="7xl" mx={'auto'} pt={5} px={{ base: 2, sm: 12, md: 17 }}>
-                <SimpleGrid columns={{ base: 1, md: 5 }} spacing={{ base: 5, lg: 8 }}>
+            <Container maxW={'7xl'}>
 
-                    {data !== null &&
-                        data
-                            .filter((_, i) => i % 8 == 0)
-                            // .slice(0, 5)
-                            .map((weather) => {
-                                return (
-                                    <ProductSimple
-                                        day={moment.unix(weather.dt).format("dddd")}
-                                        date={moment(weather.dt_txt).format("l")}
-                                        time={moment(weather.dt_txt).format("h:mm:ss a")}
-                                        icons={weather.weather[0].main}
-                                        description={weather.weather[0].main}
-                                        min={weather.main.temp_min}
-                                        max={weather.main.temp_max}
-                                        key={weather.dt_txt}
-                                    />
-                                );
-                            })}
-                </SimpleGrid>
-            </Box>
+                <Box  mx={'auto'} pt={5} px={{ base: 2, sm: 12, md: 17 }}>
+                    <SimpleGrid columns={{ base: 1, md: 5 }} spacing={{ base: 5, lg: 8 }}>
+
+                        {data !== null &&
+                            data
+                                .filter((_, i) => i % 8 == 0)
+                                // .slice(0, 5)
+                                .map((weather) => {
+                                    return (
+                                        <ProductSimple
+                                            day={moment.unix(weather.dt).format("dddd")}
+                                            date={moment(weather.dt_txt).format("l")}
+                                            time={moment(weather.dt_txt).format("h:mm:ss a")}
+                                            icons={weather.weather[0].main}
+                                            description={weather.weather[0].main}
+                                            min={weather.main.temp_min}
+                                            max={weather.main.temp_max}
+                                            key={weather.dt_txt}
+                                        />
+                                    );
+                                })}
+                    </SimpleGrid>
+                </Box>
+            </Container>
         </div>
 
     )

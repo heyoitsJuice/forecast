@@ -25,7 +25,7 @@ export default function ProductSimple(props) {
                 boxShadow={'2xl'}
                 rounded={'lg'}
                 pos={'relative'}
-                zIndex={1}>
+            >
                 <Stack pt={10} align={'center'}>
                     <Day day={props.day} />
                 </Stack>
