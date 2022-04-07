@@ -4,7 +4,7 @@ import Search from "./search";
 import axios from "axios";
 import { Box, SimpleGrid, Container } from "@chakra-ui/react";
 
-const API_KEY = process.env.API_KEY
+const API_KEY = process.env.NEXT_PUBLIC_API_KEY
 
 const Weather = () => {
     const [data, setData] = useState(null);
