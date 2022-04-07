@@ -6,6 +6,10 @@ A revamp of one of my first "real" projects. which also happened to be a take-ho
 If you would like to see a before and after check out the old one over here:
 https://github.com/heyoitsJuice/weather-app
 
+It's not deployed, so you'll need to run it yourself if you do choose to check it out.
+
+*** 
+
 This newly revamped version utilizes NextJS, ChakraUI, and React on the front-end.
 Axios is used for making requests/calls to the OpenWeatherMap API.
 MomentJS is used for reading unix values and formatting time/date values.
