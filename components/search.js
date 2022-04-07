@@ -8,10 +8,9 @@ const Search = ({ loadWeather }) => {
         <form onSubmit={loadWeather}>
             <Stack direction={'row'}>
                 <InputGroup>
-                    <InputLeftElement
-                        pointerEvents='none'
-                        children={<SearchIcon color='gray.300' />}
-                    />
+                    <InputLeftElement pointerEvents='none'>
+                        <SearchIcon color='gray.300' />
+                    </InputLeftElement >
                     <Input type="text" name="city" label="city" placeholder='Enter city here' />
                 </InputGroup>
                 <Button type='submit' colorScheme='teal' variant='solid'>

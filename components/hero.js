@@ -52,7 +52,7 @@ export default function CallToActionWithAnnotation() {
                         </Heading>
                         <Text color={'gray.500'}>
                             {/* How does this work? <br /> */}
-                            This web application utilizes OpenWeatherMap's API for the 5 Day / 3 Hour Forecast. <br />
+                            This web application utilizes OpenWeatherMap API for the 5 Day / 3 Hour Forecast. <br />
                             An API call retrieves an array of 40 data points, with each point being 3 hours apart. <br />
                             From the 40 data points, starting from 0, every 8th index is filtered out signifiying a 24 hour gap. <br />
                             The temperatures shown is NOT an average temperature, but the temperature at that time period. <br />
