@@ -1,4 +1,4 @@
-import { Button, FormControl, Input, InputGroup, InputLeftElement, Stack } from "@chakra-ui/react"
+import { Button, Input, InputGroup, InputLeftElement, Stack } from "@chakra-ui/react"
 import { SearchIcon } from "@chakra-ui/icons"
 import React from "react"
 
